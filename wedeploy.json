@@ -1,0 +1,5 @@
+{
+  "id": "atila",
+  "port": 8080,
+  "customDomains": ["atila-gh.wedeploy.io"]
+}
