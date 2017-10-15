@@ -14,7 +14,9 @@ function storeRepos() {
   getRepos('atilafassina')
   .then(gh => {
     const noForks = gh.filter(({fork}) => !fork)
-    noForks.forEach(({name, description, homepage, html_url, stargazers_count}) => {
+    noForks
+    .sort((p1,p2) => p1.stargazers_count < p2.stargazers_count)
+    .forEach(({name, description, homepage, html_url, stargazers_count}) => {
       repos.push({
         name,
         description,
