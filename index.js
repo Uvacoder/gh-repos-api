@@ -15,7 +15,7 @@ function storeRepos() {
   .then(gh => {
     const noForks = gh.filter(({fork}) => !fork)
     noForks
-    .sort((p1,p2) => p1.stargazers_count < p2.stargazers_count)
+    .sort((p1, p2) => p1.stargazers_count < p2.stargazers_count)
     .forEach(({name, description, homepage, html_url, stargazers_count}) => {
       repos.push({
         name,
@@ -34,7 +34,7 @@ const ghRepos = async (req, res) => {
 }
 
 storeRepos('atilafassina')
-setInterval(storeRepos, 2 * 60 * 60 * 10000)
+setInterval(storeRepos, 2 * 60 * 60 * 1000)
 
 module.exports = router(
   get('/repos', ghRepos),
