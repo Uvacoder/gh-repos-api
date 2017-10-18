@@ -1,5 +1,4 @@
 <div align="center">
-<img width="200" src="blogium-service.png" alt="blogium-service logo" />
 <h1>GH-Repo List</h1>
 <div>
 <b>my personal github repository list 🤓</b>
