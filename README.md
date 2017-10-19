@@ -9,9 +9,9 @@
 ## Working instance 🛰
 
 ```
-https://ghrepos.wedeploy.io/repos
+https://gh-repos.wedeploy.io/repos
 ```
-[atilafassina repos](https://ghrepos.wedeploy.io/repos)
+[atilafassina repos](https://gh-repos.wedeploy.io/repos)
 
 ## Create your own instance 🚀
 
