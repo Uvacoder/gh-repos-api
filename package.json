@@ -3,17 +3,9 @@
   "version": "0.0.0",
   "description": "🔮 gh repo list",
   "main": "index.js",
-  "scripts": {
-    "test": "xo",
-    "dev": "micro-dev",
-    "start": "micro -p 8080"
-  },
-  "xo": {
-    "space": true,
-    "semicolon": false,
-    "rules": {
-      "camelcase": 0
-    }
+  "scripts": {},
+  "prettier": {
+    "semicolon": false
   },
   "repository": {
     "type": "git",
@@ -26,12 +18,10 @@
   },
   "homepage": "https://github.com/atilafassina/gh-repos#readme",
   "dependencies": {
-    "isomorphic-fetch": "^2.2.1",
-    "micro": "^9.0.0",
-    "microrouter": "^2.2.3"
+    "@now/node": "^1.4.1",
+    "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {
-    "micro-dev": "^1.2.3",
-    "xo": "^0.18.2"
+    "@saber2pr/types-github-api": "^0.0.7"
   }
 }
