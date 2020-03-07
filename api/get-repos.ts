@@ -24,6 +24,7 @@ export default async (req: NowRequest, res: NowResponse) => {
     return;
   }
   const data = await getRepos(req.query.username);
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Cache-Control", "s-maxage=86400, stale-while-revalidate");
 
   const sanitizedData: saneRepo[] = data
